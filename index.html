@@ -4,25 +4,25 @@
   <meta charset="utf-8">
   <!-- Meta tags for social media banners, these should be filled in appropriately as they are your "business card" -->
   <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="Foster Adaptivity and Balance in Learning with Noisy Labels">
-  <meta property="og:title" content="Foster Adaptivity and Balance in Learning with Noisy Labels"/>
-  <meta property="og:description" content="A novel approach named SED to deal with label noise in a self-adaptive and class-balanced manner."/>
-  <meta property="og:url" content="https://arxiv.org/abs/2407.02778v1"/>
+  <meta name="description" content="Knowledge Transfer with Simulated Inter-Image Erasing for Weakly Supervised Semantic Segmentation">
+  <meta property="og:title" content="Knowledge Transfer with Simulated Inter-Image Erasing for Weakly Supervised Semantic Segmentation"/>
+  <meta property="og:description" content="A novel approach named KTSE to alleviate over-expansion and under-activation problems in weakly supervised semantic segmentation."/>
+  <meta property="og:url" content="https://arxiv.org/abs/2407.02768v1"/>
   <!-- Path to banner image, should be in the path listed below. Optimal dimensions are 1200X630-->
   <meta property="og:image" content="static/image/your_banner_image.png" />
   <meta property="og:image:width" content="1200"/>
   <meta property="og:image:height" content="630"/>
 
-  <meta name="twitter:title" content="Foster Adaptivity and Balance in Learning with Noisy Labels">
-  <meta name="twitter:description" content="A novel approach named SED to deal with label noise in a self-adaptive and class-balanced manner.">
+  <meta name="twitter:title" content="Knowledge Transfer with Simulated Inter-Image Erasing for Weakly Supervised Semantic Segmentation">
+  <meta name="twitter:description" content="A novel approach named KTSE to alleviate over-expansion and under-activation problems in weakly supervised semantic segmentation.">
   <!-- Path to banner image, should be in the path listed below. Optimal dimensions are 1200X600-->
   <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
   <meta name="twitter:card" content="summary_large_image">
   <!-- Keywords for your paper to be indexed by-->
-  <meta name="keywords" content="Noisy labels, Self-adaptive, Class-balanced, Sample selection, Re-weighting">
+  <meta name="keywords" content="Weakly Supervised Learning, Semantic Segmentation, Inter-Image Erasing">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Foster Adaptivity and Balance in Learning with Noisy Labels</title>
+  <title>Knowledge Transfer with Simulated Inter-Image Erasing for Weakly Supervised Semantic Segmentation</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -49,17 +49,17 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Foster Adaptivity and Balance in Learning with Noisy Labels</h1>
+          <h1 class="title is-1 publication-title">Knowledge Transfer with Simulated Inter-Image Erasing for Weakly Supervised Semantic Segmentation</h1>
           <div class="is-size-5 publication-authors">
             <!-- Paper authors -->
             <span class="author-block">
-              <a href="#" target="_blank">Mengmeng Sheng</a><sup>1</sup>,</span>
-            <span class="author-block">
-              <a href="#" target="_blank">Zeren Sun</a><sup>1</sup>,</span>
-            <span class="author-block">
               <a href="#" target="_blank">Tao Chen</a><sup>1</sup>,</span>
             <span class="author-block">
-              <a href="#" target="_blank">Shuchao Pang</a><sup>1</sup>,</span>
+              <a href="#" target="_blank">Xiruo Jiang</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="#" target="_blank">Gensheng Pei</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="#" target="_blank">Zeren Sun</a><sup>1</sup>,</span>
             <span class="author-block">
               <a href="#" target="_blank">Yucheng Wang</a><sup>2</sup>,</span>
             <span class="author-block">
@@ -75,7 +75,7 @@
             <div class="publication-links">
               <!-- Arxiv PDF link -->
               <span class="link-block">
-                <a href="https://arxiv.org/pdf/2407.02778v1.pdf" target="_blank"
+                <a href="https://arxiv.org/pdf/2407.02768v1.pdf" target="_blank"
                 class="external-link button is-normal is-rounded is-dark">
                 <span class="icon">
                   <i class="fas fa-file-pdf"></i>
@@ -87,7 +87,7 @@
 
           <!-- Github link -->
           <span class="link-block">
-            <a href="https://github.com/NUST-Machine-Intelligence-Laboratory/SED" target="_blank"
+            <a href="https://github.com/NUST-Machine-Intelligence-Laboratory/KTSE" target="_blank"
             class="external-link button is-normal is-rounded is-dark">
             <span class="icon">
               <i class="fab fa-github"></i>
@@ -98,7 +98,7 @@
 
         <!-- ArXiv abstract Link -->
         <span class="link-block">
-          <a href="https://arxiv.org/abs/2407.02778v1" target="_blank"
+          <a href="https://arxiv.org/abs/2407.02768v1" target="_blank"
           class="external-link button is-normal is-rounded is-dark">
           <span class="icon">
             <i class="ai ai-arxiv"></i>
@@ -119,9 +119,9 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <img src="static/images/fig2.png" alt="Poster Dataset Distillation (PoDD)" class="center-image" style="max-width: 100%; height: auto;">
+      <img src="static/images/fig1.png" alt="Poster Dataset Distillation (PoDD)" class="center-image" style="max-width: 100%; height: auto;">
       <h2 class="subtitle has-text-centered">
-        We propose a simple yet effective method, named <strong>SED</strong>, to learn with noisy labels in a <strong>S</strong>elf-adaptiv<strong>E</strong> and class-balance<strong>D</strong> manner. <strong>SED</strong> divides the training set into clean and noisy subsets using dynamically updated thresholds, employs a mean-teacher model for label correction, and adaptively weights noisy samples based on correction confidence. The final objective integrates classification losses and consistency regularization to boost model performance.
+        (a) Previous adversarial erasing-based approaches typically suffer from the over-expansion problem, which is hard to constrain. (b) Different from their information removal strategy, we propose to add extra object knowledge from a paired image to weaken the current object activation. The localization ability of the network is then enhanced by improving the consequent less activated attention map through learning from the object knowledge of the anchor branch. (c) Result comparison.
       </h2>
     </div>
   </div>
@@ -135,7 +135,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Label noise is ubiquitous in real-world scenarios, posing a practical challenge to supervised models due to its effect in hurting the generalization performance of deep neural networks. Existing methods primarily employ the sample selection paradigm and usually rely on dataset-dependent prior knowledge (e.g., a pre-defined threshold) to cope with label noise, inevitably degrading the adaptivity. Moreover, existing methods tend to neglect the class balance in selecting samples, leading to biased model performance. To this end, we propose a simple yet effective approach named SED to deal with label noise in a Self-adaptivE and class-balanceD manner. Specifically, we first design a novel sample selection strategy to empower self-adaptivity and class balance when identifying clean and noisy data. A mean-teacher model is then employed to correct labels of noisy samples. Subsequently, we propose a self-adaptive and class-balanced sample re-weighting mechanism to assign different weights to detected noisy samples. Finally, we additionally employ consistency regularization on selected clean samples to improve model generalization performance. Extensive experimental results on synthetic and real-world datasets demonstrate the effectiveness and superiority of our proposed method. The source code has been made anonymously available at https://github.com/NUST-Machine-Intelligence-Laboratory/SED.
+            Though adversarial erasing has prevailed in weakly supervised semantic segmentation to help activate integral object regions, existing approaches still suffer from the dilemma of under-activation and over-expansion due to the difficulty in determining when to stop erasing. In this paper, we propose a Knowledge Transfer with Simulated Inter-Image Erasing (KTSE) approach for weakly supervised semantic segmentation to alleviate the above problem. In contrast to existing erasing-based methods that remove the discriminative part for more object discovery, we propose a simulated inter-image erasing scenario to weaken the original activation by introducing extra object information. Then, object knowledge is transferred from the anchor image to the consequent less activated localization map to strengthen network localization ability. Considering the adopted bidirectional alignment will also weaken the anchor image activation if appropriate constraints are missing, we propose a self-supervised regularization module to maintain the reliable activation in discriminative regions and improve the inter-class object boundary recognition for complex images with multiple categories of objects. In addition, we resort to intra-image erasing and propose a multi-granularity alignment module to gently enlarge the object activation to boost the object knowledge transfer. Extensive experiments and ablation studies on PASCAL VOC 2012 and COCO datasets demonstrate the superiority of our proposed approach. Source codes and models are available at <a href="https://github.com/NUST-Machine-Intelligence-Laboratory/KTSE" target="_blank" class="colored-link">https://github.com/NUST-Machine-Intelligence-Laboratory/KTSE</a>.
           </p>
         </div>
       </div>
@@ -144,17 +144,18 @@
 </section>
 <!-- End paper abstract -->
 
+
 <section class="section hero is-small">
   <div class="container is-max-desktop">
     <div class="columns is-centered">
       <div class="column is-full">
         <div class="content">
-          <h2 class="title is-4">Self-Adaptive and Class-Balanced Sample Selection and Re-weighting</h2>
+          <h2 class="title is-4">Architecture of Proposed KTSE Approach</h2>
 
-          <img src="static/images/fig1.png" alt="Self-Adaptive and Class-Balanced Sample Selection and Re-weighting" class="center-image">
+          <img src="static/images/fig2.png" alt="Architecture of Proposed KTSE Approach" class="center-image">
           <div class="level-set has-text-justified">
             <p>
-              (a-b) Self-adaptive and class-balanced sample selection based on predicted probability w.r.t. given labels. The blue curve indicates the class-specific selection thresholds. (c-d) Self-adaptive and class-balanced sample re-weighting based on correction confidence. The orange curve represents the class-specific confidence threshold.
+              We propose a simulated inter-image erasing (SIE) scenario where extra object information is introduced from another paired image. We then strengthen the object localization ability of the network by improving the consequent less activated localization map through learning object knowledge from the anchor image. A self-supervised regularization (SSR) module is also proposed to avoid weakening the anchor activation due to bidirectional alignment and improve the inter-class object boundary recognition for complex images. In addition, we propose a multi-granularity alignment (MGA) module to gently enlarge the object activation to further boost the object knowledge transfer.
             </p>
           </div>
         </div>
@@ -168,12 +169,31 @@
     <div class="columns is-centered">
       <div class="column is-full">
         <div class="content">
-          <h2 class="title is-4">Average Test Accuracy on CIFAR100N and CIFAR80N Under Various Noise Conditions</h2>
+          <h2 class="title is-4">Example Localization Maps on PASCAL VOC 2012 Training Set</h2>
 
-          <img src="static/images/tab1.png" alt="Average Test Accuracy on CIFAR100N and CIFAR80N Under Various Noise Conditions" class="center-image">
+          <img src="static/images/fig3.png" alt="Example Localization Maps on PASCAL VOC 2012 Training Set" class="center-image">
           <div class="level-set has-text-justified">
             <p>
-              Experiments are conducted under symmetric and asymmetric label noise conditions. Results of existing methods are mainly drawn from previous works. † indicates methods re-implemented using their open-sourced code and default hyper-parameters.
+              For each (a) image, we show (b) ground truth, localization maps produced by (c) previous work of AEFT, (d) our baseline, (e) baseline + SIE, (f) baseline + SIE + SSR, and (g) baseline + SIE + SSR + MGA. Best viewed in color.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section hero is-small">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full">
+        <div class="content">
+          <h2 class="title is-4">Quantitative Comparisons of Pseudo-Mask Accuracy and Segmentation Results on PASCAL VOC 2012</h2>
+          <div class="is-flex is-justify-content-center">
+            <img src="static/images/tab1.png" alt="Quantitative Comparisons of Pseudo-Mask Accuracy and Segmentation Results on PASCAL VOC 2012" style="width: 70%;">
+          </div>
+          <div class="level-set has-text-justified">
+            <p>
+              Comparison of various methods' performance on the PASCAL VOC 2012 dataset, including accuracy of pseudo-masks (Table 1) and segmentation results with different backbones (Table 2). The results highlight the effectiveness of the proposed KTSE approach in improving both pseudo-mask quality and segmentation accuracy.
             </p>
           </div>
         </div>
@@ -182,17 +202,19 @@
   </div>
 </section>
 
-<section class="section hero is-small">
+<section class="section hero is-light">
   <div class="container is-max-desktop">
     <div class="columns is-centered">
       <div class="column is-full">
         <div class="content">
-          <h2 class="title is-4">Comparison of Test Accuracy on Real-World Noisy Datasets</h2>
-
-          <img src="static/images/tab2.png" alt="Comparison of Test Accuracy on Real-World Noisy Datasets" class="center-image">
+          <h2 class="title is-4">Quantitative Comparisons of Segmentation Performance on PASCAL VOC 2012 and COCO Datasets</h2>
+          <div class="is-flex is-justify-content-center">
+            <img src="static/images/tab2.png" alt="Quantitative Comparisons of Segmentation Performance on PASCAL VOC 2012 and COCO Datasets" style="width: 70%;">
+          </div>
           <div class="level-set has-text-justified">
             <p>
-              The table shows the experimental results of existing methods and SED on Web-Aircraft, Web-Bird, and Web-Car datasets. Results of existing methods are mainly drawn from previous works. † indicates methods re-implemented using their open-sourced code and default hyper-parameters.            </p>
+              Performance comparisons of various methods on PASCAL VOC 2012 using ResNet backbone (Table 3) and COCO (Tables 4 and 5) datasets using different backbones. The tables demonstrate the superiority of the proposed KTSE approach in achieving higher segmentation accuracy across both datasets.
+            </p>
           </div>
         </div>
       </div>
@@ -202,15 +224,13 @@
 
 
 
-
-
 <!--BibTex citation -->
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>@article{sheng2024foster,
-  title={Foster Adaptivity and Balance in Learning with Noisy Labels},
-  author={Sheng, Mengmeng and Sun, Zeren and Chen, Tao and Pang, Shuchao and Wang, Yucheng and Yao, Yazhou},
+      <pre><code>@article{chen2024knowledge,
+  title={Knowledge Transfer with Simulated Inter-Image Erasing for Weakly Supervised Semantic Segmentation},
+  author={Chen, Tao and Jiang, Xiruo and Pei, Gensheng and Sun, Zeren and Wang, Yucheng and Yao, Yazhou},
   journal={European Conference on Computer Vision (ECCV)},
   year={2024}
 }</code></pre>
